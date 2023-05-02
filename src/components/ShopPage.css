@@ -1,0 +1,9 @@
+#shopContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.itemContainer {
+    margin-top: 50px;
+}
