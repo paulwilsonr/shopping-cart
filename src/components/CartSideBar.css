@@ -1,0 +1,15 @@
+#sideBar {
+    border: 1px solid black;
+    position: fixed;
+    width: 25%;
+    background-color: white;
+    height: 95vh;
+    right: 0;
+    top: 53px;
+    overflow: scroll;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}

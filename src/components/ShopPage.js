@@ -2,16 +2,17 @@ import React from "react";
 import Item from "./Item";
 import "./ShopPage.css";
 
-function ShopPage({ shopData }) {
+function ShopPage({ shopData, handleAddToCart }) {
 
     return (
         <div id="shopContainer">
             Shop!
-            {console.log(shopData)}
+            
             {shopData.map(item => {
+        
                 return (
-                    <div className="itemContainer">
-                        <Item className="item" itemData={item} />
+                    <div className="itemContainer" key={item.key}>
+                        <Item className="item" itemData={item} handleAddToCart={handleAddToCart}  />
                     </div>
                 )
             })}
